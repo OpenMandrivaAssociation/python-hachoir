@@ -11,7 +11,7 @@ BuildRoot: 	%{_tmppath}/%{name}-buildroot
 Url: 		http://hachoir.org/
 BuildArch:  noarch
 Requires:   python-urwid
-BuildRequires: python
+BuildRequires: python-devel
 
 %description
 Hachoir is a library written in Python which allows to see and edit a binary 
