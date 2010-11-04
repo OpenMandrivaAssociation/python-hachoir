@@ -11,7 +11,7 @@ BuildRoot: 	%{_tmppath}/%{name}-buildroot
 Url: 		http://hachoir.org/
 BuildArch:  noarch
 Requires:   python-urwid
-BuildRequires: python-devel
+BuildRequires: python
 
 %description
 Hachoir is a library written in Python which allows to see and edit a binary 
@@ -35,9 +35,9 @@ python setup.py install --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f INSTALLED_FILES
+%files
 %defattr(-,root,root)
 %doc AUTHORS COPYING BUGS  README INSTALL TODO
-%doc doc/* 
-%dir %py_puresitedir/%module_name
-
+%doc doc/*
+%{_bindir}/*
+%py_puresitedir/*
