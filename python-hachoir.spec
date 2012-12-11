@@ -41,3 +41,28 @@ rm -rf $RPM_BUILD_ROOT
 %doc doc/*
 %{_bindir}/*
 %py_puresitedir/*
+
+
+%changelog
+* Thu Nov 04 2010 Funda Wang <fwang@mandriva.org> 0.5.2-3mdv2011.0
++ Revision: 593096
+- fix file list
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.5.2-3mdv2010.0
++ Revision: 430846
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0.5.2-2mdv2009.0
++ Revision: 222650
+- buildrequires python-devel instead of python
+- BuildRequires python for distutils/core
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Wed Aug 23 2006 Michael Scherer <misc@mandriva.org> 0.5.2-1mdv2007.0
+- First package
+
