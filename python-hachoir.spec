@@ -8,7 +8,7 @@ Source0: 	%{module_name}-%{version}.tar.bz2
 License:	GPL
 Group: 		Development/Python
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
-Url: 		http://hachoir.org/
+Url: 		https://hachoir.org/
 BuildArch:  noarch
 Requires:   python-urwid
 BuildRequires: python
